@@ -37,6 +37,16 @@
           }
         }
 
+        @media (min-width: 1200px) {
+                .welcome-desk {
+          display: block;
+        }
+
+        .welcome-mobile {
+          display: none;
+        }
+        }
+
         .big-button {
           /* Size and Spacing */
           /* padding: 1rem 2rem; */
@@ -80,6 +90,14 @@
               text-align: left;
               margin: auto;
           }
+
+          /* .welcome-desk {
+            display: none;
+          }
+
+          .welcome-mobile {
+            display: block;
+          } */
         }
 
 
@@ -210,7 +228,11 @@
       .nav-links li {
         margin: 1rem 0;
       }
+
+
     }
+
+    
 
         /* Stacked layout for mobile, can be changed with Media Queries */
         section {
@@ -277,15 +299,12 @@
           /* background-color: #81C2C0; */
         }
 
-        .backdrop-container {
-          position: relative; /* This acts as the anchor for the overlay */
-          width: 100%;      /* Set this to whatever size you need */
+        .welcome-desk {
+          display: block;
         }
 
-        .base-img {
-          width: 100%;       /* Makes the base image fill the container */
-          display: block;
-          border-radius: 1rem;
+        .welcome-mobile {
+          display: none;
         }
 
         .dna-img {
