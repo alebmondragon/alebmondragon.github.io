@@ -1,57 +1,62 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <!-- The most important tag for mobile responsiveness -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DNA Dallas</title>
-    <link rel="icon" type="image/png" href="images/main-logo-no-tagline.png">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" type="image/png" href="images/main-logo-no-tagline.png" />
+    <link rel="stylesheet" href="css/index.css" />
     <script src="js/index.js"></script>
-</head>
-<body>
-
+  </head>
+  <body>
     <header>
-        <nav class="navbar">
-            <div class="nav-container">
-            
-            <a href="#" class="logo">
-                <img src="images/dna-logo-2.png" alt="">
-            </a>
+      <nav class="navbar">
+        <div class="nav-container">
+          <a href="#" class="logo">
+            <img src="images/dna-logo-2.png" alt="" />
+          </a>
 
-            <div class="menu-toggle" id="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+          <div class="menu-toggle" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
 
-            <ul class="nav-links" id="nav-links">
-                <li><a href="https://forms.gle/tL7y7JzbyXbnenCC7">Registro De Niños</a></li>
-                <li><a href="https://forms.gle/sGcxu8EFFKbJX7uF6">Registro De Voluntarios</a></li>
-            </ul>
-
-            </div>
-        </nav>
+          <ul class="nav-links" id="nav-links">
+            <li>
+              <a href="https://forms.gle/tL7y7JzbyXbnenCC7"
+                >Registro De Niños</a
+              >
+            </li>
+            <li>
+              <a href="https://forms.gle/sGcxu8EFFKbJX7uF6"
+                >Registro De Voluntarios</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <script>
-        const menuToggle = document.getElementById('menu-toggle');
-        const navLinks = document.getElementById('nav-links');
+      const menuToggle = document.getElementById("menu-toggle");
+      const navLinks = document.getElementById("nav-links");
 
-        menuToggle.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-        });
+      menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
     </script>
 
     <div class="container welcome">
-        <section>
-            <!-- <div class="welcome-desk">
+      <section>
+        <!-- <div class="welcome-desk">
                 <img src="images/welcome-desk.png" alt="">
             </div> -->
-            <div class="welcome-mobile">
-                <img src="images/welcome-mobile.png" alt="">
-            </div>
-        </section>
+        <div class="welcome-mobile">
+          <img src="images/welcome-mobile.png" alt="" />
+        </div>
+      </section>
     </div>
 
     <!-- <div class="container welcome">
@@ -66,69 +71,116 @@
     </div> -->
 
     <div class="container dates">
-        <div class="box">
-            <img class="date-img" src="images/all-dates.png" alt="Fecha 1" width="20" height="20">
-        </div>
-        <div class="box">
-            <img class="date-img" src="images/invitacion.png" alt="Fecha 2" width="20" height="20">
-        </div>
-        <div class="box">
-            <img class="date-img" src="images/sombrero.png" alt="Fecha 3" width="20" height="20">
-        </div>
+      <div class="box">
+        <img
+          class="date-img"
+          src="images/all-dates.png"
+          alt="Fecha 1"
+          width="20"
+          height="20"
+        />
+      </div>
+      <div class="box">
+        <img
+          class="date-img"
+          src="images/invitacion.png"
+          alt="Fecha 2"
+          width="20"
+          height="20"
+        />
+      </div>
+      <div class="box">
+        <img
+          class="date-img"
+          src="images/sombrero.png"
+          alt="Fecha 3"
+          width="20"
+          height="20"
+        />
+      </div>
     </div>
 
     <div class="container registration">
-        <section>
-            <h1>Registrate dando click en estos botones</h1>
-        </section>
+      <section>
+        <h1>Registrate dando click en estos botones</h1>
+      </section>
     </div>
 
     <div class="container registro">
-        <div class="box">
-            <button class="big-button" onclick="openLink('https://forms.gle/sGcxu8EFFKbJX7uF6')">
-                <img class="btn-img-1" src="images/reg-voluntarios-2.png" alt="Registro de Voluntarios" width="20" height="20">
-            </button>
-        </div>
-        <div class="box">
-            <button class="big-button" onclick="openLink('https://forms.gle/tL7y7JzbyXbnenCC7')">
-                <img class="btn-img-1" src="images/reg-kids.png" alt="Registro de Niños" width="20" height="20">
-            </button>
-        </div>
+      <div class="box">
+        <button
+          class="big-button"
+          onclick="openLink('https://forms.gle/sGcxu8EFFKbJX7uF6')"
+        >
+          <img
+            class="btn-img-1"
+            src="images/reg-voluntarios-2.png"
+            alt="Registro de Voluntarios"
+            width="20"
+            height="20"
+          />
+        </button>
+      </div>
+      <div class="box">
+        <button
+          class="big-button"
+          onclick="openLink('https://forms.gle/tL7y7JzbyXbnenCC7')"
+        >
+          <img
+            class="btn-img-1"
+            src="images/reg-kids.png"
+            alt="Registro de Niños"
+            width="20"
+            height="20"
+          />
+        </button>
+      </div>
     </div>
 
     <div class="container location">
-        <section>
-            <h1>12400 Greenspoint Dr, Houston TX 77060</h1>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3457.126594403712!2d-95.40948402401594!3d29.94703707497284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c9f054e5ab65%3A0x46104141931daaf3!2s12400%20Greenspoint%20Dr%2C%20Houston%2C%20TX%2077060!5e0!3m2!1ses-419!2sus!4v1779696502227!5m2!1ses-419!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        
-        </section>
+      <section>
+        <h1>12400 Greenspoint Dr, Houston TX 77060</h1>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3457.126594403712!2d-95.40948402401594!3d29.94703707497284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c9f054e5ab65%3A0x46104141931daaf3!2s12400%20Greenspoint%20Dr%2C%20Houston%2C%20TX%2077060!5e0!3m2!1ses-419!2sus!4v1779696502227!5m2!1ses-419!2sus"
+          width="400"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
     </div>
 
     <div class="container registro">
-        <div class="box text-section">
-            <h1>Informes o preguntas</h1>
-            <p>
-                Nayeli Avalos
-            </p>
-            <p>
-                <a href="tel:+14693254415">(469)325-4415</a>
-            </p>
-            <p>
-                nayelitaah20@gmail.com
-            </p>
-        </div>
+      <div class="box text-section">
+        <h1>Informes o preguntas</h1>
+        <p>Nayeli Avalos</p>
+        <p>
+          <a href="tel:+14693254415">(469)325-4415</a>
+        </p>
+        <p>nayelitaah20@gmail.com</p>
+      </div>
     </div>
 
     <div class="container dna">
-        <div class="box dna-section">
-            <img class="dna-img" src="images/logo-dna.png" alt="">
-        </div>
-        <div class="box dna-section text-section">
-            <h2>Visión</h2>
-            <p>“Ser un ministerio enfocado en discipular a las generaciones de Niños y Adolescentes con fundamento en los valores bíblicos, procurando su desarrollo para el servicio en el reino de Dios.”</p>
-            <h2>Misión</h2>
-            <p>“Discipular a las generaciones de Niños y Adolescentes con fundamento en los valores bíblicos, desarrollando vidas comprometidas con el reino de Dios, la Iglesia y sociedad.” </p>
-        </div>
+      <div class="box dna-section">
+        <img class="dna-img" src="images/logo-dna.png" alt="" />
+      </div>
+      <div class="box dna-section text-section">
+        <h2>Visión</h2>
+        <p>
+          “Ser un ministerio enfocado en discipular a las generaciones de Niños
+          y Adolescentes con fundamento en los valores bíblicos, procurando su
+          desarrollo para el servicio en el reino de Dios.”
+        </p>
+        <h2>Misión</h2>
+        <p>
+          “Discipular a las generaciones de Niños y Adolescentes con fundamento
+          en los valores bíblicos, desarrollando vidas comprometidas con el
+          reino de Dios, la Iglesia y sociedad.”
+        </p>
+      </div>
     </div>
-
-</body>
+  </body>
 </html>

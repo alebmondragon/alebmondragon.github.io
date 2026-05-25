@@ -1,248 +1,243 @@
 /* Basic Reset and Typography */
-        body {
-            font-family: sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #F1E0AB;
-            color: #5F220E;
-        }
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f1e0ab;
+  color: #5f220e;
+}
 
-        /* Container that prevents content from hitting screen edges */
-        .container {
-            width: 100%;
-            margin: auto;
-            text-align: center;
-            display: flex;
-            gap: 2rem; 
-            flex-direction: column; /* Stacks them vertically */
-            justify-content: space-around;
-        }
+/* Container that prevents content from hitting screen edges */
+.container {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column; /* Stacks them vertically */
+  justify-content: space-around;
+}
 
-        @media (min-width: 768px) {
-          .container {
-            flex-direction: row; /* Flips them to horizontal */
-          }
-          
-          .box {
-            flex: 1; /* Makes both boxes take up equal width */
-            row-gap: 2rem;
-          }
-        }
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row; /* Flips them to horizontal */
+  }
 
-        .big-button {
-          margin: 0rem 1rem;
-          font-size: 24px;
-          font-weight: bold;
-          background-color: #b7bf43; 
-          border: none;
-          border-radius: 12px;
-          cursor: pointer;
-          height: 30rem;
-          transition: background-color 0.3s ease, transform 0.2s;
-        }
+  .box {
+    flex: 1; /* Makes both boxes take up equal width */
+    row-gap: 2rem;
+  }
+}
 
-        @media screen and (max-width: 500px) {
+.big-button {
+  margin: 0rem 1rem;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #b7bf43;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  height: 30rem;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s;
+}
 
-          .big-button {
-            height: 20rem;
-          }
+@media screen and (max-width: 500px) {
+  .big-button {
+    height: 20rem;
+  }
 
-          .dna-section {
-            height: 20rem;
-          }
-        }
+  .dna-section {
+    height: 20rem;
+  }
+}
 
+.btn-img-1 {
+  width: 100%;
+}
 
+.date-img {
+  width: 95%;
+  border-radius: 12px;
+}
+.mission-img {
+  width: 80%;
+}
 
-        .btn-img-1 {
-          width: 100%;
-        }
+.big-button:hover {
+  background-color: #50287f;
+  transform: scale(1.05);
+}
 
-        .date-img {
-          width: 95%;
-          border-radius: 12px;
-        }
-        .mission-img {
-          width: 80%;
-        }
+/* The "Click" Effect */
+.big-button:active {
+  transform: scale(0.98);
+}
 
-        .big-button:hover {
-          background-color: #50287f; 
-          transform: scale(1.05);
-        }
+.box-btn a:hover {
+  color: #60a5fa;
+}
 
-        /* The "Click" Effect */
-        .big-button:active {
-          transform: scale(0.98);
-        }
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+}
 
-        .box-btn a:hover {
-          color: #60a5fa;
-        }
+header {
+  background: #333;
+  color: white;
+  /* padding: 1rem; */
+  text-align: center;
+}
 
-        /* Responsive images */
-        img {
-            max-width: 100%;
-            height: auto;
-            margin: auto;
-        }
+/* NAVBAR */
+.navbar {
+  background: #26507a;
+  color: white;
+  padding: 0.5rem 1rem;
+  position: relative;
+}
 
-        header {
-            background: #333;
-            color: white;
-            /* padding: 1rem; */
-            text-align: center;
-        }
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-            /* NAVBAR */
-    .navbar {
-      background: #26507a;
-      color: white;
-      padding: 0.5rem 1rem;
-      position: relative;
-    }
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  max-width: 10rem;
+}
 
-    .nav-container {
-      max-width: 1200px;
-      margin: auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
 
-    .logo {
-      font-size: 1.5rem;
-      font-weight: bold;
-      text-decoration: none;
-      color: white;
-      max-width: 10rem;
-    }
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
 
-    .nav-links {
-      list-style: none;
-      display: flex;
-      gap: 2rem;
-    }
+.nav-links a:hover {
+  color: #60a5fa;
+}
 
-    .nav-links a {
-      text-decoration: none;
-      color: white;
-      font-weight: 700;
-      transition: color 0.3s ease;
-    }
+/* Hamburger Button */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
 
-    .nav-links a:hover {
-      color: #60a5fa;
-    }
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+}
 
-    /* Hamburger Button */
-    .menu-toggle {
-      display: none;
-      flex-direction: column;
-      cursor: pointer;
-      gap: 5px;
-    }
+/* MOBILE */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
 
-    .menu-toggle span {
-      width: 25px;
-      height: 3px;
-      background: white;
-      border-radius: 2px;
-    }
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #26507a;
+    flex-direction: column;
+    align-items: center;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    z-index: 1;
+  }
 
-    /* MOBILE */
-    @media (max-width: 768px) {
-      .menu-toggle {
-        display: flex;
-      }
+  .nav-links.active {
+    max-height: 300px;
+    padding: 1rem 0;
+  }
 
-      .nav-links {
-        position: absolute;
-        top: 70px;
-        left: 0;
-        width: 100%;
-        background: #26507a;
-        flex-direction: column;
-        align-items: center;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.3s ease;
-        z-index: 1;
-      }
+  .nav-links li {
+    margin: 1rem 0;
+  }
+}
 
-      .nav-links.active {
-        max-height: 300px;
-        padding: 1rem 0;
-      }
+/* Stacked layout for mobile, can be changed with Media Queries */
+section {
+  /* padding: 10px 0; */
+  text-align: center;
+  width: 100%;
+}
 
-      .nav-links li {
-        margin: 1rem 0;
-      }
+iframe {
+  width: 60%;
+  border: 0;
+}
 
+.text-section {
+  text-align: center;
+  margin: auto;
+  padding: 2rem;
+}
 
-    }
+.dna-section {
+  min-height: 20rem;
+}
 
-    
+.welcome {
+  padding-bottom: 4rem;
+}
 
-        /* Stacked layout for mobile, can be changed with Media Queries */
-        section {
-            /* padding: 10px 0; */
-            text-align: center;
-            width: 100%;
-        }
+.location {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  /* background-color: #FDF078; */
+}
 
-        iframe {
-            width: 60%;
-            border: 0;
-        }
+.registration {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  /* background-color: #F09F4F; */
+}
 
-        .text-section { 
-            text-align: center;
-            margin: auto;
-            padding: 2rem;
-        }
+.dna {
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+  /* background-color: #81C2C0; */
+}
 
-        .dna-section {
-          min-height: 20rem;
-        }
+.welcome-desk {
+  display: block;
+}
 
-        .welcome {
-          padding-bottom: 4rem;
-        }
+.welcome-mobile {
+  display: block;
+}
 
-        .location {
-          padding-top: 3rem;
-          padding-bottom: 3rem;
-          /* background-color: #FDF078; */
-        }
+.dna-img {
+  width: 50%; /* Makes the base image fill the container */
+}
 
-        .registration {
-          padding-top: 1rem;
-          padding-bottom: 1rem;
-          /* background-color: #F09F4F; */
-        }
-
-        .dna {
-          padding-top: 3rem;
-          padding-bottom: 4rem;
-          /* background-color: #81C2C0; */
-        }
-
-        .welcome-desk {
-          display: block;
-        }
-
-        .welcome-mobile {
-          display: block;
-        }
-
-        .dna-img {
-          width: 50%;       /* Makes the base image fill the container */
-        }
-
-        .overlay-img {
-          position: absolute; /* Takes it out of the normal flow */
-          top: 15%;
-          left: 24%;
-          width: 50%;
-        }
+.overlay-img {
+  position: absolute; /* Takes it out of the normal flow */
+  top: 15%;
+  left: 24%;
+  width: 50%;
+}
