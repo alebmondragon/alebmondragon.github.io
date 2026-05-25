@@ -4,142 +4,9 @@
     <meta charset="UTF-8">
     <!-- The most important tag for mobile responsiveness -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Mobile-Friendly Page</title>
-    <style>
-        /* Basic Reset and Typography */
-        body {
-            font-family: sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        /* Container that prevents content from hitting screen edges */
-        .container {
-            width: 100%;
-            margin: auto;
-            /* padding: 10px; */
-            background: white;
-            text-align: center;
-        }
-
-        /* Responsive images */
-        img {
-            max-width: 95%;
-            height: auto;
-            margin: auto;
-        }
-
-        header {
-            background: #333;
-            color: white;
-            /* padding: 1rem; */
-            text-align: center;
-        }
-
-            /* NAVBAR */
-    .navbar {
-      background: #E0803B;
-      color: white;
-      padding: 1rem 2rem;
-      position: relative;
-    }
-
-    .nav-container {
-      max-width: 1200px;
-      margin: auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .logo {
-      font-size: 1.5rem;
-      font-weight: bold;
-      text-decoration: none;
-      color: white;
-    }
-
-    .nav-links {
-      list-style: none;
-      display: flex;
-      gap: 2rem;
-    }
-
-    .nav-links a {
-      text-decoration: none;
-      color: white;
-      transition: color 0.3s ease;
-    }
-
-    .nav-links a:hover {
-      color: #60a5fa;
-    }
-
-    /* Hamburger Button */
-    .menu-toggle {
-      display: none;
-      flex-direction: column;
-      cursor: pointer;
-      gap: 5px;
-    }
-
-    .menu-toggle span {
-      width: 25px;
-      height: 3px;
-      background: white;
-      border-radius: 2px;
-    }
-
-    /* MOBILE */
-    @media (max-width: 768px) {
-      .menu-toggle {
-        display: flex;
-      }
-
-      .nav-links {
-        position: absolute;
-        top: 70px;
-        left: 0;
-        width: 100%;
-        background: #E0803B;
-        flex-direction: column;
-        align-items: center;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.3s ease;
-      }
-
-      .nav-links.active {
-        max-height: 300px;
-        padding: 1rem 0;
-      }
-
-      .nav-links li {
-        margin: 1rem 0;
-      }
-    }
-
-        /* Stacked layout for mobile, can be changed with Media Queries */
-        section {
-            padding: 10px 0;
-            text-align: center;
-            width: 100%;
-        }
-
-        iframe {
-            width: 60%;
-            border: 0;
-        }
-
-        .text-section { 
-            width: 70%;
-            text-align: left;
-            margin: auto;
-        }
-        
-    </style>
+    <title>DNA Dallas</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js"></script>
 </head>
 <body>
 
@@ -147,7 +14,9 @@
         <nav class="navbar">
             <div class="nav-container">
             
-            <a href="#" class="logo">DNA Distrito Dallas</a>
+            <a href="#" class="logo">
+                <img src="images/dna-logo-2.png" alt="">
+            </a>
 
             <div class="menu-toggle" id="menu-toggle">
                 <span></span>
@@ -156,10 +25,8 @@
             </div>
 
             <ul class="nav-links" id="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Registro</a></li>
-                <li><a href="#">FAQs</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="https://forms.gle/tL7y7JzbyXbnenCC7">Registro De Niños</a></li>
+                <li><a href="https://forms.gle/sGcxu8EFFKbJX7uF6">Registro De Voluntarios</a></li>
             </ul>
 
             </div>
@@ -177,34 +44,70 @@
 
     <div class="container">
         <section>
-            <img src="images/wj-facebook-cover.jpg" alt="">
+            <div class="backdrop-container">
+                <img class="base-img" src="images/vbs-background-1.png" alt="">
+                <img class="overlay-img" src="images/main-logo-no-tagline.png" >
+            </div>
+        </section>
+    </div>
+
+    <div class="container location">
+        <section>
+            <h2>¡Bienvenidos a Wonder Junction!</h2>
+            <p>
+                No hay mayor alegría que alabar el nombre del Señor todo el día. Pero, ¿cómo pueden hacerlo sus hijos?
+                Les invitamos a que inscriban a sus hijos a nuestra celebración de inauguración de DNA Distrito Dallas, no se lo pueden perder. Su hijo/a deberá estar registrado/a para participar en el programa.
+                Los primeros 100 recibirán su sombrero gratis.
+            </p>
         </section>
     </div>
 
     <div class="container">
         <section>
-            <h2>Houston, TX</h2>
-            <h3>Viernes, Junio 12 – Sábado, Junio 13</h3>  
+            <h2 class="title">Houston, TX</h2>
+            <h4>Viernes: 12 de junio de 7:00 a 10:00 p.m.</h4>
+            <h4>Sábado :13 de junio de 10:00 a 1:00 pm.</h4>
+            <h4>Sábado: 13 de junio de 4:00 am a 7:00 pm.</h4>
         </section>
+    </div>
 
+    <div class="container location">
         <section>
-            <div class="text-section">
-                <p><strong>¡Bienvenidos a Wonder Junction!</strong> No hay mayor alegría que alabar el nombre del Señor todo el día. Pero, ¿cómo pueden hacerlo sus hijos?
-                Les invitamos a que inscriban a sus hijos a nuestra celebración de inauguración de DNA Distrito Dallas, no se lo pueden perder.</p>
-                <p>Su hijo/a deberá estar registrado/a para participar en el programa.</p>
-                <p>Los primeros 100 recibirán su sombrero gratis.</p>
-                <ul>
-                    <li>Viernes: 12 de junio de 7:00 a 10:00 p.m.</li>
-                    <li>Sábado :13 de junio de 10:00 a 1:00 pm.</li>
-                    <li>Sábado: 13 de junio de 4:00 am a 7:00 pm.</li>
-                </ul>
+            <h2 class="title">Registro</h2>
+        </section>
+    </div>
+
+    <div class="container">
+        <div class="box">
+            <button class="big-button" onclick="openLink('https://forms.gle/sGcxu8EFFKbJX7uF6')">
+                <img class="btn-img-1" src="images/reg-voluntarios-2.png" alt="Registro de Voluntarios" width="20" height="20">
+            </button>
+        </div>
+        <div class="box">
+            <button class="big-button" onclick="openLink('https://forms.gle/tL7y7JzbyXbnenCC7')">
+                <img class="btn-img-1" src="images/reg-kids.png" alt="Registro de Niños" width="20" height="20">
+            </button>
+        </div>
+    </div>
+
+    <div class="container location">
+        <section>
+            <h2 class="title">12400 Greenspoint Dr, Houston TX 77060</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3457.126594403712!2d-95.40948402401594!3d29.94703707497284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c9f054e5ab65%3A0x46104141931daaf3!2s12400%20Greenspoint%20Dr%2C%20Houston%2C%20TX%2077060!5e0!3m2!1ses-419!2sus!4v1779696502227!5m2!1ses-419!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        
+        </section>
+    </div>
+
+    <div class="container">
+            <div class="box second-section">
+                <img class="dna-img" src="images/logo-dna.png" alt="">
+            </div>
+            <div class="box second-section text-section">
                 <p>Aquí en Wonder Junction, nos maravillaremos de Jesús y viviremos para su gloria.</p>
             </div>
-        </section>
+    </div>
 
-        <section>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.237295692401!2d-96.66746462391193!3d32.89189377361592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864ea0ad146ba76d%3A0xd52028d43b3eb41!2s2204%20S%20Shiloh%20Rd%2C%20Garland%2C%20TX%2075041!5e0!3m2!1ses-419!2sus!4v1779606027751!5m2!1ses-419!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
+    <div class="container">
+        <p>Cupo limitado</p>
     </div>
 
 </body>

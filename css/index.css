@@ -1,0 +1,234 @@
+/* Basic Reset and Typography */
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #fefefe;
+        }
+
+        /* Container that prevents content from hitting screen edges */
+        .container {
+            width: 100%;
+            margin: auto;
+            /* padding: 10px; */
+            /* background: white; */
+            text-align: center;
+            display: flex;
+            gap: 1rem; 
+            flex-direction: column; /* Stacks them vertically */
+            justify-content: space-around;
+        }
+ 
+
+        .box {    /* Optional: makes both divs equal width */
+          /* border: 1px solid black; */
+          gap: 2rem;
+        }
+
+        @media (min-width: 768px) {
+          .container {
+            flex-direction: row; /* Flips them to horizontal */
+          }
+          
+          .box {
+            flex: 1; /* Makes both boxes take up equal width */
+            row-gap: 2rem;
+          }
+        }
+
+        .big-button {
+          /* Size and Spacing */
+          padding: 1rem 2rem;
+          margin: 0rem 2rem;
+          font-size: 24px;
+          font-weight: bold;
+          
+          /* Colors and Style */
+          background-color: #4e7942; 
+          /* color: white; */
+          border: none;
+          border-radius: 12px;
+          cursor: pointer; /* Makes it look clickable */
+
+                    /* padding-left: 30px;*/
+          height: 30rem;
+
+          /* min-width: 80%; */
+          
+          /* Smooth Transition */
+          transition: background-color 0.3s ease, transform 0.2s;
+        }
+
+        .btn-img-1 {
+          width: 100%;
+        }
+
+
+        /* The Hover Effect */
+        .big-button:hover {
+          background-color: #A8B348; /* Darker Blue */
+          transform: scale(1.05);    /* Slightly grows on hover */
+        }
+
+        /* The "Click" Effect */
+        .big-button:active {
+          transform: scale(0.98);    /* Shrinks slightly when clicked */
+        }
+
+        .box-btn a:hover {
+          color: #60a5fa;
+        }
+
+        /* Responsive images */
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: auto;
+        }
+
+        header {
+            background: #333;
+            color: white;
+            /* padding: 1rem; */
+            text-align: center;
+        }
+
+            /* NAVBAR */
+    .navbar {
+      background: #E0803B;
+      color: white;
+      padding: 0.5rem 1rem;
+      position: relative;
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: white;
+      max-width: 10rem;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #60a5fa;
+    }
+
+    /* Hamburger Button */
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      gap: 5px;
+    }
+
+    .menu-toggle span {
+      width: 25px;
+      height: 3px;
+      background: white;
+      border-radius: 2px;
+    }
+
+    /* MOBILE */
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: flex;
+      }
+
+      .nav-links {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #E0803B;
+        flex-direction: column;
+        align-items: center;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+      }
+
+      .nav-links.active {
+        max-height: 300px;
+        padding: 1rem 0;
+      }
+
+      .nav-links li {
+        margin: 1rem 0;
+      }
+    }
+
+        /* Stacked layout for mobile, can be changed with Media Queries */
+        section {
+            /* padding: 10px 0; */
+            text-align: center;
+            width: 100%;
+        }
+
+        iframe {
+            width: 60%;
+            border: 0;
+        }
+
+        .text-section { 
+            width: 50%;
+            text-align: left;
+            margin: auto;
+        }
+
+        .second-section {
+          min-height: 25rem;
+        }
+
+        .title {
+          max-width: 80%;
+          border-bottom: 1px solid #333;
+          margin: auto;
+          margin-bottom: 3rem;
+        }
+
+        .location {
+          margin-top: 3rem;
+          margin-bottom: 3rem;
+        }
+
+        .backdrop-container {
+          position: relative; /* This acts as the anchor for the overlay */
+          width: 100%;      /* Set this to whatever size you need */
+        }
+
+        .base-img {
+          width: 100%;       /* Makes the base image fill the container */
+          display: block;
+        }
+
+        .dna-img {
+          width: 50%;       /* Makes the base image fill the container */
+        }
+
+        .overlay-img {
+          position: absolute; /* Takes it out of the normal flow */
+          top: 15%;
+          left: 24%;
+          width: 50%;
+        }
