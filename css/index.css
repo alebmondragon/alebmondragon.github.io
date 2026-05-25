@@ -1,10 +1,10 @@
 /* Basic Reset and Typography */
         body {
             font-family: sans-serif;
-            line-height: 1.6;
+            /* line-height: 1.6; */
             margin: 0;
             padding: 0;
-            background-color: #fefefe;
+            background-color: #F1E0AB;
         }
 
         /* Container that prevents content from hitting screen edges */
@@ -15,7 +15,7 @@
             /* background: white; */
             text-align: center;
             display: flex;
-            gap: 1rem; 
+            gap: 2rem; 
             flex-direction: column; /* Stacks them vertically */
             justify-content: space-around;
         }
@@ -23,7 +23,7 @@
 
         .box {    /* Optional: makes both divs equal width */
           /* border: 1px solid black; */
-          gap: 2rem;
+          /* gap: 2rem; */
         }
 
         @media (min-width: 768px) {
@@ -39,7 +39,7 @@
 
         .big-button {
           /* Size and Spacing */
-          padding: 1rem 2rem;
+          /* padding: 1rem 2rem; */
           margin: 0rem 2rem;
           font-size: 24px;
           font-weight: bold;
@@ -63,17 +63,35 @@
         @media screen and (max-width: 500px) {
 
           .big-button {
-
             height: 15rem;
-
           }
 
+          .welcome-text {
+            width: 100%;
+            padding-bottom: 1rem;
+          }
+
+          .second-section {
+            width: 100%;
+          }
+
+          .text-section {
+              width: 88%;
+              text-align: left;
+              margin: auto;
+          }
         }
 
 
 
         .btn-img-1 {
           width: 100%;
+        }
+
+        .date-img {
+          width: 95%;
+          border-radius: 12px;
+          /* margin: 0rem 2rem; */
         }
         .mission-img {
           width: 80%;
@@ -207,7 +225,7 @@
         }
 
         .text-section { 
-            width: 50%;
+            /* width: 50%; */
             text-align: left;
             margin: auto;
         }
@@ -225,32 +243,38 @@
         }
 
         .welcome {
-          background-color: #F1E0AB;
-          padding-bottom: 2rem;
+          /* background-color: #F1E0AB; */
+          padding-bottom: 4rem;
+          /* padding-top: 4rem; */
+        }
+
+        .welcome-text {
+          width: 70%;
+          padding-bottom: 1rem;
         }
 
         .dates {
-          padding-top: 4rem;
-          padding-bottom: 4rem;
-          background-color: #4f7e8e;
+          /* padding-top: 4rem;
+          padding-bottom: 4rem; */
+          /* background-color: #F1E0AB; */
         }
 
         .location {
           padding-top: 3rem;
           padding-bottom: 3rem;
-          background-color: #FDF078;
+          /* background-color: #FDF078; */
         }
 
         .registro {
           padding-top: 4rem;
           padding-bottom: 4rem;
-          background-color: #F09F4F;
+          /* background-color: #F09F4F; */
         }
 
         .dna {
           padding-top: 3rem;
           padding-bottom: 4rem;
-          background-color: #81C2C0;
+          /* background-color: #81C2C0; */
         }
 
         .backdrop-container {
@@ -261,6 +285,7 @@
         .base-img {
           width: 100%;       /* Makes the base image fill the container */
           display: block;
+          border-radius: 1rem;
         }
 
         .dna-img {
