@@ -1,29 +1,21 @@
 /* Basic Reset and Typography */
         body {
             font-family: sans-serif;
-            /* line-height: 1.6; */
             margin: 0;
             padding: 0;
             background-color: #F1E0AB;
+            color: #5F220E;
         }
 
         /* Container that prevents content from hitting screen edges */
         .container {
             width: 100%;
             margin: auto;
-            /* padding: 10px; */
-            /* background: white; */
             text-align: center;
             display: flex;
             gap: 2rem; 
             flex-direction: column; /* Stacks them vertically */
             justify-content: space-around;
-        }
- 
-
-        .box {    /* Optional: makes both divs equal width */
-          /* border: 1px solid black; */
-          /* gap: 2rem; */
         }
 
         @media (min-width: 768px) {
@@ -37,36 +29,15 @@
           }
         }
 
-        /* @media (min-width: 1200px) {
-                .welcome-desk {
-          display: block;
-        }
-
-        .welcome-mobile {
-          display: none;
-        }
-        } */
-
         .big-button {
-          /* Size and Spacing */
-          /* padding: 1rem 2rem; */
           margin: 0rem 1rem;
           font-size: 24px;
           font-weight: bold;
-          
-          /* Colors and Style */
           background-color: #b7bf43; 
-          /* color: white; */
           border: none;
           border-radius: 12px;
-          cursor: pointer; /* Makes it look clickable */
-
-                    /* padding-left: 30px;*/
+          cursor: pointer;
           height: 30rem;
-
-          /* min-width: 80%; */
-          
-          /* Smooth Transition */
           transition: background-color 0.3s ease, transform 0.2s;
         }
 
@@ -76,13 +47,7 @@
             height: 20rem;
           }
 
-          /* .welcome-text {
-            width: 100%;
-            padding-bottom: 1rem;
-          } */
-
           .dna-section {
-            /* width: 100%; */
             height: 20rem;
           }
         }
@@ -96,22 +61,19 @@
         .date-img {
           width: 95%;
           border-radius: 12px;
-          /* margin: 0rem 2rem; */
         }
         .mission-img {
           width: 80%;
         }
 
-
-        /* The Hover Effect */
         .big-button:hover {
-          background-color: #50287f; /* Darker Blue */
-          transform: scale(1.05);    /* Slightly grows on hover */
+          background-color: #50287f; 
+          transform: scale(1.05);
         }
 
         /* The "Click" Effect */
         .big-button:active {
-          transform: scale(0.98);    /* Shrinks slightly when clicked */
+          transform: scale(0.98);
         }
 
         .box-btn a:hover {
@@ -244,25 +206,9 @@
           min-height: 20rem;
         }
 
-        .title {
-          max-width: 90%;
-          padding: 2rem;
-          /* border-bottom: 1px solid #333; */
-          margin: auto;
-          /* margin-bottom: 3rem; */
-        }
-
         .welcome {
-          /* background-color: #F1E0AB; */
           padding-bottom: 4rem;
-          /* padding-top: 4rem; */
         }
-
-        /* .welcome-text {
-          width: 70%;
-          padding-bottom: 1rem;
-        } */
-
 
         .location {
           padding-top: 3rem;
@@ -270,9 +216,9 @@
           /* background-color: #FDF078; */
         }
 
-        .registro {
-          padding-top: 4rem;
-          padding-bottom: 4rem;
+        .registration {
+          padding-top: 1rem;
+          padding-bottom: 1rem;
           /* background-color: #F09F4F; */
         }
 
