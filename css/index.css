@@ -60,8 +60,23 @@
           transition: background-color 0.3s ease, transform 0.2s;
         }
 
+        @media screen and (max-width: 500px) {
+
+          .big-button {
+
+            height: 15rem;
+
+          }
+
+        }
+
+
+
         .btn-img-1 {
           width: 100%;
+        }
+        .mission-img {
+          width: 80%;
         }
 
 
@@ -166,6 +181,7 @@
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.3s ease;
+        z-index: 1;
       }
 
       .nav-links.active {
@@ -201,15 +217,40 @@
         }
 
         .title {
-          max-width: 80%;
-          border-bottom: 1px solid #333;
+          max-width: 90%;
+          padding: 2rem;
+          /* border-bottom: 1px solid #333; */
           margin: auto;
-          margin-bottom: 3rem;
+          /* margin-bottom: 3rem; */
+        }
+
+        .welcome {
+          background-color: #F1E0AB;
+          padding-bottom: 2rem;
+        }
+
+        .dates {
+          padding-top: 4rem;
+          padding-bottom: 4rem;
+          background-color: #4f7e8e;
         }
 
         .location {
-          margin-top: 3rem;
-          margin-bottom: 3rem;
+          padding-top: 3rem;
+          padding-bottom: 3rem;
+          background-color: #FDF078;
+        }
+
+        .registro {
+          padding-top: 4rem;
+          padding-bottom: 4rem;
+          background-color: #F09F4F;
+        }
+
+        .dna {
+          padding-top: 3rem;
+          padding-bottom: 4rem;
+          background-color: #81C2C0;
         }
 
         .backdrop-container {
