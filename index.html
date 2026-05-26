@@ -1,188 +1,240 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <!-- The most important tag for mobile responsiveness -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DNA Dallas</title>
-    <link rel="icon" type="image/png" href="images/main-logo-no-tagline.png" />
-    <link rel="stylesheet" href="css/index.css" />
-    <script src="js/index.js"></script>
-  </head>
-  <body>
-    <header>
-      <nav class="navbar">
-        <div class="nav-container">
-          <a href="#" class="logo">
-            <img src="images/dna-logo-2.png" alt="" />
-          </a>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DNA Distrito Dallas - Wonder Junction</title>
 
-          <div class="menu-toggle" id="menu-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rye&family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css" />
 
-          <ul class="nav-links" id="nav-links">
-            <li>
-              <a href="https://forms.gle/tL7y7JzbyXbnenCC7"
-                >Registro De Niños</a
-              >
-            </li>
-            <li>
-              <a href="https://forms.gle/sGcxu8EFFKbJX7uF6"
-                >Registro De Voluntarios</a
-              >
-            </li>
-          </ul>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+
+      <img src="images/main-logo.png" alt="Wonder Junction Logo" class="logo">
+
+      <p class="subtitle">
+        ¡Una aventura bíblica inolvidable en el Viejo Oeste!
+      </p>
+
+      <h1>¡Todos a Bordo!</h1>
+
+      <p class="hero-text">
+        Únase a nosotros en Wonder Junction para una experiencia emocionante llena de
+        juegos, música, historias bíblicas, actividades creativas y mucha diversión.
+        ¡Los niños aprenderán sobre Jesús mientras exploran el Viejo Oeste!
+      </p>
+
+      <div class="date-box">
+        <h2>Fechas del Evento</h2>
+        <p>Viernes, 12 de Junio </p>
+        <p>7:00 PM - 10:00 PM</p>
+        <br>
+        <p>Sábado, 13 de Junio</p>
+        <p>10:00 AM - 1:00 PM</p>
+        <p>4:00 PM - 7:00 PM</p>
+      </div>
+
+      <div class="buttons">
+        <a href="https://forms.gle/tL7y7JzbyXbnenCC7" target="_blank" class="btn btn-primary">
+          Registrar Niños
+        </a>
+
+        <a href="https://forms.gle/sGcxu8EFFKbJX7uF6" target="_blank" class="btn btn-secondary">
+          Registrar Voluntarios
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- INFO -->
+  <section class="info-section">
+    <div class="container">
+
+      <h2 class="section-title">
+        Sobre Wonder Junction
+      </h2>
+
+      <div class="cards">
+
+        <div class="card">
+          <h3>Actividades</h3>
+          <p>
+            Disfrute de juegos temáticos, música, manualidades, dinámicas interactivas,
+            snacks y enseñanzas bíblicas diseñadas especialmente para niños.
+          </p>
         </div>
-      </nav>
-    </header>
 
-    <script>
-      const menuToggle = document.getElementById("menu-toggle");
-      const navLinks = document.getElementById("nav-links");
-
-      menuToggle.addEventListener("click", () => {
-        navLinks.classList.toggle("active");
-      });
-    </script>
-
-    <div class="container welcome">
-      <section>
-        <!-- <div class="welcome-desk">
-                <img src="images/welcome-desk.png" alt="">
-            </div> -->
-        <div class="welcome-mobile">
-          <img src="images/welcome-mobile.png" alt="" />
+        <div class="card">
+          <h3>Edades</h3>
+          <p>
+            El programa está abierto para niños de 4 a 10 años.
+            Todas las actividades serán supervisadas por líderes y voluntarios capacitados.
+          </p>
         </div>
-      </section>
+
+        <div class="card">
+          <h3>Organizadores</h3>
+          <p>
+            Este evento es organizado por el ministerio <strong>DNA del Distrito Dallas</strong>
+            con el propósito de compartir el amor de Cristo con las familias de nuestra comunidad.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Registro</h3>
+          <p>
+            Los primeros 100 niños en registrarse recibirán un sombrero gratis.
+          </p>
+        </div>
+
+      </div>
+
     </div>
+  </section>
 
-    <!-- <div class="container welcome">
-        <section>
-            <h2 class="title">Bienvenidos a Wonder Junction</h2>
-            <p class="welcome-text">
-                No hay mayor alegría que alabar el nombre del Señor todo el día. Pero, ¿cómo pueden hacerlo sus hijos?
-                Les invitamos a que inscriban a sus hijos a nuestra celebración de inauguración de DNA Distrito Dallas, no se lo pueden perder. Su hijo/a deberá estar registrado/a para participar en el programa.
-                Los primeros 100 recibirán su sombrero gratis.
-            </p>
-        </section>
-    </div> -->
+  <!-- LOCATION SECTION -->
+<section class="location-section">
+  <div class="container">
 
-    <div class="container dates">
-      <div class="box">
-        <img
-          class="date-img"
-          src="images/all-dates.png"
-          alt="Fecha 1"
-          width="20"
-          height="20"
-        />
-      </div>
-      <div class="box">
-        <img
-          class="date-img"
-          src="images/invitacion.png"
-          alt="Fecha 2"
-          width="20"
-          height="20"
-        />
-      </div>
-      <div class="box">
-        <img
-          class="date-img"
-          src="images/sombrero.png"
-          alt="Fecha 3"
-          width="20"
-          height="20"
-        />
-      </div>
-    </div>
+    <h2 class="section-title">
+      Ubicación
+    </h2>
 
-    <div class="container registration">
-      <section>
-        <h1>Registrate dando click en estos botones</h1>
-      </section>
-    </div>
+    <div class="location-wrapper">
 
-    <div class="container registro">
-      <div class="box">
-        <button
-          class="big-button"
-          onclick="openLink('https://forms.gle/sGcxu8EFFKbJX7uF6')"
-        >
-          <img
-            class="btn-img-1"
-            src="images/reg-voluntarios-2.png"
-            alt="Registro de Voluntarios"
-            width="20"
-            height="20"
-          />
-        </button>
-      </div>
-      <div class="box">
-        <button
-          class="big-button"
-          onclick="openLink('https://forms.gle/tL7y7JzbyXbnenCC7')"
-        >
-          <img
-            class="btn-img-1"
-            src="images/reg-kids.png"
-            alt="Registro de Niños"
-            width="20"
-            height="20"
-          />
-        </button>
-      </div>
-    </div>
+      <div class="location-info">
+        <h3>¡Visítanos!</h3>
 
-    <div class="container location">
-      <section>
-        <h1>12400 Greenspoint Dr, Houston TX 77060</h1>
+        <p>
+          Wonder Junction se llevará a cabo en salón Galileo del hotel Hilton Houston North.
+          Estamos emocionados de recibir a todas las familias para una aventura inolvidable.
+        </p>
+
+        <div class="address-box">
+          <strong>📍 Dirección:</strong><br>
+          12400 Greenspoint Dr<br>
+          Houston TX 77060
+        </div>
+
+        <div class="address-box">
+          <strong>🕒 Horarios:</strong><br>
+          Viernes, 12 de Junio, 2026<br>
+          7:00 PM - 10:00 PM<br><br>
+          Sábado, 13 de Junio, 2026<br>
+          10:00 AM - 1:00 PM<br>
+          4:00 PM - 7:00 PM
+        </div>
+      </div>
+
+      <div class="map-container">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3457.126594403712!2d-95.40948402401594!3d29.94703707497284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c9f054e5ab65%3A0x46104141931daaf3!2s12400%20Greenspoint%20Dr%2C%20Houston%2C%20TX%2077060!5e0!3m2!1ses-419!2sus!4v1779696502227!5m2!1ses-419!2sus"
-          width="400"
-          height="300"
-          style="border: 0"
           allowfullscreen=""
           loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </section>
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ORGANIZERS SECTION -->
+<section class="organizers-section">
+  <div class="container">
+
+    <h2 class="section-title">
+      Organizadores
+    </h2>
+
+    <div class="organizers-wrapper">
+
+      <div class="organizers-logo">
+        <img src="images/logo-dna.png" alt="DNA - Discipulando Niños y Adolescentes">
+      </div>
+
+      <div class="organizers-content">
+
+        <h3>DNA Distrito Dallas</h3>
+
+        <p>
+          Wonder Junction es presentado por el ministerio
+          <strong>DNA – Distrito Dallas</strong>,
+          comprometido con enseñar los valores bíblicos y compartir
+          el amor de Jesús con las nuevas generaciones.
+        </p>
+
+        <p>
+          Nuestro objetivo es crear experiencias dinámicas, creativas
+          y centradas en Cristo para que cada niño y adolescente
+          pueda crecer espiritualmente mientras se divierte.
+        </p>
+
+        <div class="organizer-highlights">
+
+          <div class="highlight-box">
+            🎵 Música y Adoración
+          </div>
+
+          <div class="highlight-box">
+            📖 Enseñanza Bíblica
+          </div>
+
+          <div class="highlight-box">
+            🎨 Actividades Creativas
+          </div>
+
+          <div class="highlight-box">
+            🤠 Ambiente Familiar
+          </div>
+
+        </div>
+
+      </div>
+
     </div>
 
-    <div class="container registro">
-      <div class="box text-section">
-        <h1>Informes o preguntas</h1>
-        <p>Nayeli Avalos</p>
-        <p>
-          <a href="tel:+14693254415">(469)325-4415</a>
-        </p>
-        <p>
-          <a href="mailto:afcjdnadistritodallas@gmail.com">afcjdnadistritodallas@gmail.com</a>
-        </p>
-      </div>
-    </div>
+  </div>
+</section>
 
-    <div class="container dna">
-      <div class="box dna-section">
-        <img class="dna-img" src="images/logo-dna.png" alt="" />
-      </div>
-      <div class="box dna-section text-section">
-        <h2>Visión</h2>
-        <p>
-          “Ser un ministerio enfocado en discipular a las generaciones de Niños
-          y Adolescentes con fundamento en los valores bíblicos, procurando su
-          desarrollo para el servicio en el reino de Dios.”
-        </p>
-        <h2>Misión</h2>
-        <p>
-          “Discipular a las generaciones de Niños y Adolescentes con fundamento
-          en los valores bíblicos, desarrollando vidas comprometidas con el
-          reino de Dios, la Iglesia y sociedad.”
-        </p>
-      </div>
-    </div>
-  </body>
+  <!-- CONTACT -->
+  <section class="contact">
+
+    <h2>Contáctanos</h2>
+
+    <p class="contact-info">
+      Nayeli Avalos<br>
+      Coordinadora DNA Distrito Dallas
+    </p>
+
+    <p class="contact-info">
+      📞 <a href="tel:+14693254415">(469) 325-4415</a>
+    </p>
+
+    <p class="contact-info">
+      ✉️ <a href="mailto:afcjdnadistritodallas@gmail.com">afcjdnadistritodallas@gmail.com</a>
+    </p>
+
+    <p class="contact-info">
+      Síguenos en redes sociales para más información y actualizaciones.
+    </p>
+
+  </section>
+
+  <footer>
+    © 2026 IAFCJ DNA Distrito Dallas • Todos los derechos reservados
+  </footer>
+
+</body>
 </html>
