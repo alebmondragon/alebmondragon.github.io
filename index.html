@@ -296,6 +296,31 @@
   font-weight: 500;
 }
 
+.address-box-hotel {
+  padding: 18px 0px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-hotel {
+  padding: 16px 30px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: 0.3s ease;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+  flex-grow: 1;
+  background: var(--gold);
+  color: var(--deep-blue);
+  text-align: center;
+}
+
+.btn-hotel:hover {
+  transform: translateY(-3px);
+  background: #ffd66c;
+}
+
 .map-container {
   border-radius: 20px;
   overflow: hidden;
@@ -425,10 +450,10 @@
 
       <div class="date-box">
         <h2>Fechas del Evento</h2>
-        <p>Viernes, 12 de Junio </p>
+        <p>Viernes, 12 de Junio 2026</p>
         <p>7:00 PM - 10:00 PM</p>
         <br>
-        <p>Sábado, 13 de Junio</p>
+        <p>Sábado, 13 de Junio 2026</p>
         <p>10:00 AM - 1:00 PM</p>
         <p>4:00 PM - 7:00 PM</p>
       </div>
@@ -506,7 +531,10 @@
         <h3>¡No te lo pierdas!</h3>
 
         <p>
-          Wonder Junction se llevará a cabo en salón Galileo del hotel Hilton Houston North.
+          Wonder Junction se llevará a cabo en salón Galileo del 
+          <strong><a href="https://www.hilton.com/en/book/reservation/rooms/?ctyhocn=HOUGPHF&arrivalDate=2026-06-12&departureDate=2026-06-13&groupCode=iafcj&room1NumAdults=1" target="_blank">
+          Hotel Hilton Houston North.
+          </a></strong>
           Estamos emocionados de recibir a todas las familias para una aventura inolvidable.
         </p>
 
@@ -516,13 +544,10 @@
           Houston TX 77060
         </div>
 
-        <div class="address-box">
-          <strong>🕒 Horarios:</strong><br>
-          Viernes, 12 de Junio, 2026<br>
-          7:00 PM - 10:00 PM<br><br>
-          Sábado, 13 de Junio, 2026<br>
-          10:00 AM - 1:00 PM<br>
-          4:00 PM - 7:00 PM
+        <div class="address-box-hotel">
+          <a href="https://www.hilton.com/en/book/reservation/rooms/?ctyhocn=HOUGPHF&arrivalDate=2026-06-12&departureDate=2026-06-13&groupCode=iafcj&room1NumAdults=1" target="_blank" class="btn-hotel">
+          Reservar Hospedaje
+          </a>
         </div>
       </div>
 
