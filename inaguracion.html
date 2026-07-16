@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DNA Distrito Dallas</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rye&family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --gold: #f6c14b;
+      --orange: #e67a2e;
+      --sunset: #ffb15e;
+      --red-rock: #a33a1c;
+      --deep-blue: #12335b;
+      --sky-blue: #4ca6c7;
+      --cream: #fff4dc;
+      --white: #ffffff;
+      --shadow: rgba(0, 0, 0, 0.35);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: var(--cream);
+      color: var(--deep-blue);
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    /* HERO */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      background:
+        linear-gradient(rgba(18, 51, 91, 0.55), rgba(18, 51, 91, 0.75)),
+        url('images/vbs-background.png') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+      overflow: hidden;
+    }
+
+    .hero-content {
+      max-width: 1000px;
+      z-index: 2;
+    }
+
+    .logo {
+      width: 100%;
+      max-width: 650px;
+      margin-bottom: 20px;
+      filter: drop-shadow(0 10px 25px rgba(0,0,0,0.45));
+    }
+
+    .subtitle {
+      font-size: 1.3rem;
+      color: var(--cream);
+      margin-bottom: 20px;
+      font-weight: 500;
+    }
+
+    .hero h1 {
+      font-family: 'Rye', cursive;
+      color: var(--gold);
+      font-size: clamp(2.5rem, 6vw, 5rem);
+      text-shadow: 4px 4px 0px var(--red-rock);
+      margin-bottom: 15px;
+    }
+
+    .hero-text {
+      color: var(--white);
+      font-size: 1.1rem;
+      max-width: 750px;
+      margin: 0 auto 35px;
+    }
+
+    .date-box {
+      display: inline-block;
+      background: rgba(255, 244, 220, 0.95);
+      padding: 18px 28px;
+      border-radius: 16px;
+      margin-bottom: 35px;
+      box-shadow: 0 8px 20px var(--shadow);
+      border: 3px solid var(--gold);
+    }
+
+    .date-box h2 {
+      color: var(--red-rock);
+      font-family: 'Rye', cursive;
+      margin-bottom: 8px;
+      font-size: 1.8rem;
+    }
+
+    .date-box p {
+      color: var(--deep-blue);
+      font-weight: 700;
+      font-size: 1rem;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+
+    .btn {
+      padding: 16px 30px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 1rem;
+      transition: 0.3s ease;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+    }
+
+    .btn-primary {
+      background: var(--gold);
+      color: var(--deep-blue);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      background: #ffd66c;
+    }
+
+    .btn-secondary {
+      background: var(--orange);
+      color: var(--white);
+    }
+
+    .btn-secondary:hover {
+      transform: translateY(-3px);
+      background: #ff8f3a;
+    }
+
+    /* INFO SECTION */
+    .info-section {
+      background: var(--cream);
+      padding: 80px 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      text-align: center;
+      font-family: 'Rye', cursive;
+      font-size: 3rem;
+      color: var(--red-rock);
+      margin-bottom: 50px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: white;
+      padding: 35px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      border-top: 8px solid var(--orange);
+      transition: 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+    }
+
+    .card h3 {
+      font-family: 'Rye', cursive;
+      color: var(--deep-blue);
+      margin-bottom: 15px;
+      font-size: 1.7rem;
+    }
+
+    .card p {
+      color: #444;
+    }
+
+    /* CONTACT */
+    .contact {
+      background: linear-gradient(135deg, var(--deep-blue), #1f4f7f);
+      color: white;
+      padding: 70px 20px;
+      text-align: center;
+    }
+
+    .contact h2 {
+      font-family: 'Rye', cursive;
+      font-size: 3rem;
+      margin-bottom: 25px;
+      color: var(--gold);
+    }
+
+    .contact-info {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+
+    .contact a {
+      color: var(--sunset);
+      font-weight: 700;
+    }
+
+    footer {
+      background: #0f2744;
+      color: rgba(255,255,255,0.75);
+      text-align: center;
+      padding: 20px;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        padding-top: 60px;
+      }
+
+      .hero-text {
+        font-size: 1rem;
+      }
+
+      .section-title,
+      .contact h2 {
+        font-size: 2.2rem;
+      }
+
+      .card {
+        padding: 25px;
+      }
+    }
+
+    /* LOCATION SECTION */
+.location-section {
+  padding: 80px 20px;
+  background: linear-gradient(
+    180deg,
+    #fff4dc 0%,
+    #ffe5b7 100%
+  );
+}
+
+.location-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.location-info {
+  background: white;
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  border-left: 8px solid var(--orange);
+}
+
+.location-info h3 {
+  font-family: 'Rye', cursive;
+  color: var(--red-rock);
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.location-info p {
+  margin-bottom: 25px;
+  color: #444;
+}
+
+.address-box {
+  background: var(--cream);
+  padding: 18px;
+  border-radius: 14px;
+  margin-bottom: 15px;
+  color: var(--deep-blue);
+  font-weight: 500;
+}
+
+.address-box-hotel {
+  padding: 18px 0px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-hotel {
+  padding: 16px 30px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: 0.3s ease;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+  flex-grow: 1;
+  background: var(--gold);
+  color: var(--deep-blue);
+  text-align: center;
+}
+
+.btn-hotel:hover {
+  transform: translateY(-3px);
+  background: #ffd66c;
+}
+
+.map-container {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+  min-height: 450px;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 450px;
+  border: none;
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+  .location-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .map-container,
+  .map-container iframe {
+    min-height: 350px;
+  }
+}
+
+/* ORGANIZERS SECTION */
+.organizers-section {
+  padding: 90px 20px;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(18, 51, 91, 0.97),
+      rgba(31, 79, 127, 0.96)
+    );
+  color: white;
+}
+
+.organizers-section .section-title {
+  color: var(--gold);
+}
+
+.organizers-wrapper {
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.organizers-logo {
+  text-align: center;
+}
+
+.organizers-logo img {
+  width: 100%;
+  max-width: 360px;
+  filter: drop-shadow(0 12px 25px rgba(0,0,0,0.35));
+}
+
+.organizers-content h3 {
+  font-family: 'Rye', cursive;
+  font-size: 2.2rem;
+  color: var(--sunset);
+  margin-bottom: 20px;
+}
+
+.organizers-content p {
+  font-size: 1.05rem;
+  margin-bottom: 20px;
+  color: rgba(255,255,255,0.92);
+}
+
+.organizer-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.highlight-box {
+  background: rgba(255,255,255,0.12);
+  border: 2px solid rgba(255,255,255,0.15);
+  padding: 14px 18px;
+  border-radius: 14px;
+  font-weight: 600;
+  backdrop-filter: blur(4px);
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+  .organizers-wrapper {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .organizers-content h3 {
+    font-size: 1.9rem;
+  }
+
+  .organizer-highlights {
+    justify-content: center;
+  }
+}
+
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+
+      <img src="images/main-logo.png" alt="Wonder Junction Logo" class="logo">
+
+      <p class="subtitle">
+        ¡Una aventura bíblica inolvidable en el Viejo Oeste!
+      </p>
+
+      <h1>¡Todos a Bordo!</h1>
+
+      <p class="hero-text">
+        Únase a nosotros en Wonder Junction para una experiencia emocionante llena de
+        juegos, música, historias bíblicas, actividades creativas y mucha diversión.
+        ¡Los niños aprenderán sobre Jesús mientras exploran el Viejo Oeste!
+      </p>
+
+      <div class="date-box">
+        <h2>Fechas del Evento</h2>
+        <p>Viernes, 12 de Junio 2026</p>
+        <p>7:00 PM - 10:00 PM</p>
+        <br>
+        <p>Sábado, 13 de Junio 2026</p>
+        <p>10:00 AM - 1:00 PM</p>
+        <p>4:00 PM - 7:00 PM</p>
+      </div>
+
+      <div class="buttons">
+        <a href="https://forms.gle/tL7y7JzbyXbnenCC7" target="_blank" class="btn btn-primary">
+          Registrar Niños
+        </a>
+
+        <a href="https://forms.gle/sGcxu8EFFKbJX7uF6" target="_blank" class="btn btn-secondary">
+          Registrar Voluntarios
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- INFO -->
+  <section class="info-section">
+    <div class="container">
+
+      <h2 class="section-title">
+        Sobre Wonder Junction
+      </h2>
+
+      <div class="cards">
+
+        <div class="card">
+          <h3>Actividades</h3>
+          <p>
+            Disfrute de juegos temáticos, música, manualidades, dinámicas interactivas,
+            snacks y enseñanzas bíblicas diseñadas especialmente para niños.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Edades</h3>
+          <p>
+            El programa está abierto para niños de 4 a 10 años.
+            Todas las actividades serán supervisadas por líderes y voluntarios capacitados.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Organizadores</h3>
+          <p>
+            Este evento es organizado por el ministerio <strong>DNA del Distrito Dallas</strong>
+            con el propósito de compartir el amor de Cristo con las familias de nuestra comunidad.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Registro</h3>
+          <p>
+            Los primeros 100 niños en registrarse recibirán un sombrero gratis.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- LOCATION SECTION -->
+<section class="location-section">
+  <div class="container">
+
+    <h2 class="section-title">
+      Ubicación
+    </h2>
+
+    <div class="location-wrapper">
+
+      <div class="location-info">
+        <h3>¡No te lo pierdas!</h3>
+
+        <p>
+          Wonder Junction se llevará a cabo en salón Galileo del 
+          <strong><a href="https://www.hilton.com/en/book/reservation/rooms/?ctyhocn=HOUGPHF&arrivalDate=2026-06-12&departureDate=2026-06-13&groupCode=iafcj&room1NumAdults=1" target="_blank">
+          Hotel Hilton Houston North.
+          </a></strong>
+          Estamos emocionados de recibir a todas las familias para una aventura inolvidable.
+        </p>
+
+        <div class="address-box">
+          <strong>📍 Dirección:</strong><br>
+          12400 Greenspoint Dr<br>
+          Houston TX 77060
+        </div>
+
+        <div class="address-box-hotel">
+          <a href="https://www.hilton.com/en/book/reservation/rooms/?ctyhocn=HOUGPHF&arrivalDate=2026-06-12&departureDate=2026-06-13&groupCode=iafcj&room1NumAdults=1" target="_blank" class="btn-hotel">
+          Reservar Hospedaje
+          </a>
+        </div>
+      </div>
+
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3457.126594403712!2d-95.40948402401594!3d29.94703707497284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c9f054e5ab65%3A0x46104141931daaf3!2s12400%20Greenspoint%20Dr%2C%20Houston%2C%20TX%2077060!5e0!3m2!1ses-419!2sus!4v1779696502227!5m2!1ses-419!2sus"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ORGANIZERS SECTION -->
+<section class="organizers-section">
+  <div class="container">
+
+    <h2 class="section-title">
+      Organizadores
+    </h2>
+
+    <div class="organizers-wrapper">
+
+      <div class="organizers-logo">
+        <img src="images/logo-dna.png" alt="DNA - Discipulando Niños y Adolescentes">
+      </div>
+
+      <div class="organizers-content">
+
+        <h3>DNA Distrito Dallas</h3>
+
+        <p>
+          Wonder Junction es presentado por el ministerio
+          <strong>DNA Distrito Dallas</strong>,
+          comprometido con enseñar los valores bíblicos y compartir
+          el amor de Jesús con las nuevas generaciones.
+        </p>
+
+        <p>
+          Nuestro objetivo es crear experiencias dinámicas, creativas
+          y centradas en Cristo para que cada niño y adolescente
+          pueda crecer espiritualmente mientras se divierte.
+        </p>
+
+        <div class="organizer-highlights">
+
+          <div class="highlight-box">
+            🎵 Música y Adoración
+          </div>
+
+          <div class="highlight-box">
+            📖 Enseñanza Bíblica
+          </div>
+
+          <div class="highlight-box">
+            🎨 Actividades Creativas
+          </div>
+
+          <div class="highlight-box">
+            🤠 Ambiente Familiar
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+  <!-- CONTACT -->
+  <section class="contact">
+
+    <h2>Contáctanos</h2>
+
+    <p class="contact-info">
+      Nayeli Avalos<br>
+      Coordinadora DNA Distrito Dallas
+    </p>
+
+    <p class="contact-info">
+      📞 <a href="tel:+14693254415">(469) 325-4415</a>
+    </p>
+
+    <p class="contact-info">
+      ✉️ <a href="mailto:afcjdnadistritodallas@gmail.com">afcjdnadistritodallas@gmail.com</a>
+    </p>
+
+    <p class="contact-info">
+      Síguenos en redes sociales para más información y actualizaciones.
+    </p>
+
+  </section>
+
+  <footer>
+    © 2026 IAFCJ DNA Distrito Dallas • Todos los derechos reservados
+  </footer>
+
+</body>
+</html>
