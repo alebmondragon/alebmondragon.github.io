@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Jueces | DNA Distrito Dallas</title>
-      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+      <meta charset="utf-8"/>
+      <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+      <title>Jueces de Israel</title>
+      <link rel="icon" type="image/x-icon" href="images/favicon.png">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&amp;display=swap" rel="stylesheet"/>
       <style>
          :root{
          --purple:#5a28a5;
@@ -152,11 +153,44 @@
          padding:30px;
          }
          }
+         .organizadores-section{
+         background:#eef5ff;
+         }
+         .org-grid{
+         display:grid;
+         grid-template-columns:320px 1fr;
+         gap:40px;
+         align-items:center;
+         }
+         .org-grid img{
+         max-width:100%;
+         display:block;
+         margin:auto;
+         }
+         @media(max-width:700px){
+         .org-grid{grid-template-columns:1fr;}
+         }
+         .contactanos-section{
+         background:linear-gradient(135deg,#1d73d8,#5a28a5);
+         color:white;
+         }
+         .contactanos-section h2,.contactanos-section p,.contactanos-section a{
+         color:white;
+         }
+         .contact-card{
+         max-width:700px;
+         margin:auto;
+         background:rgba(255,255,255,.12);
+         padding:35px;
+         border-radius:18px;
+         backdrop-filter:blur(4px);
+         }
+         .contact-card p{margin-bottom:16px;}
       </style>
    </head>
    <body>
       <div class="hero">
-         <img src="images/jueces-hero.png" alt="Jueces de Israel">
+         <img alt="Jueces de Israel" src="images/jueces-hero.png"/>
       </div>
       <div class="container">
          <div class="event-box">
@@ -168,11 +202,11 @@
                <div class="card">
                   <h3>📅 Fechas</h3>
                   <p>
-                     <b>Viernes 31 de Julio</b><br>
+                     <b>Viernes 31 de Julio</b><br/>
                      3:00 PM
                   </p>
                   <p>
-                     <b>Sábado 1 de Agosto</b><br>
+                     <b>Sábado 1 de Agosto</b><br/>
                      9:00 AM
                   </p>
                </div>
@@ -207,37 +241,36 @@
                </div>
             </div>
             <div class="buttons">
-               <a href="https://docs.google.com/forms/d/e/1FAIpQLSe8OTa-G187LiN_WoYlZchp-VCuSGoBEvTyFBpQoxUa51X4ag/viewform" target="_blank" class="btn students">
+               <a class="btn students" href="https://docs.google.com/forms/d/e/1FAIpQLSe8OTa-G187LiN_WoYlZchp-VCuSGoBEvTyFBpQoxUa51X4ag/viewform" target="_blank">
                Registrar Niños
                </a>
-               <a href="https://docs.google.com/forms/d/e/1FAIpQLSeX2M0QS5llgdg2FyLf7XPQKbKwevHinIwHjEzNY2PeXKKpGQ/viewform" target="_blank" class="btn volunteers">
+               <a class="btn volunteers" href="https://docs.google.com/forms/d/e/1FAIpQLSeX2M0QS5llgdg2FyLf7XPQKbKwevHinIwHjEzNY2PeXKKpGQ/viewform" target="_blank">
                Registrar Voluntarios
                </a>
             </div>
          </div>
       </div>
-      <section>
-         <div class="container about">
-            <div class="organizers">
-               <h2>¿Quiénes Somos?</h2>
-               <p>
-                  El ministerio <span class="highlight">DNA Distrito Dallas</span> trabaja para compartir el amor de Cristo con los niños y sus familias mediante experiencias dinámicas, enseñanza bíblica y actividades diseñadas especialmente para ellos.
-               </p>
-               <p>
-                  Nuestro deseo es que cada niño conozca a Jesús mientras aprende sobre los grandes héroes de la Biblia de una manera divertida e inolvidable.
-               </p>
+      <section class="organizadores-section">
+         <div class="container">
+            <div class="org-grid">
+               <div>
+                  <img alt="DNA Distrito Dallas" src="images/logo-dna.png"/>
+               </div>
+               <div>
+                  <h2>Organizadores</h2>
+                  <p><strong>DNA Distrito Dallas</strong> es el ministerio infantil y de adolescentes de IAFCJ comprometido con discipular a la nueva generación mediante la enseñanza de la Palabra de Dios, actividades creativas y eventos que fortalecen la fe de los niños y sus familias.</p>
+                  <p>Nuestro deseo es formar discípulos que amen a Jesús y vivan conforme a Su Palabra, creando experiencias que inspiren a cada niño a crecer en su relación con Cristo.</p>
+               </div>
             </div>
-            <div class="contact">
-               <h2>Contacto</h2>
-               <p><strong>📞 Teléfono:</strong><br>
-                  <a href="tel:+14693254415">(469) 325-4415</a>
-               </p>
-               <p><strong>📧 Email:</strong><br>
-                  <a href="mailto:afcjdnadistritodallas@gmail.com">afcjdnadistritodallas@gmail.com</a>
-               </p>
-               <p><strong>Preguntas:</strong><br>
-                  Con gusto responderemos cualquier duda sobre registros, horarios o voluntariado.
-               </p>
+         </div>
+      </section>
+      <section class="contactanos-section">
+         <div class="container">
+            <div class="contact-card">
+               <h2>Contáctanos</h2>
+               <p><strong>Nayeli Avalos, Coordinadora DNA Distrito Dallas</strong></p>
+               <p><strong>📞 Teléfono:</strong> <a href="tel:+14693254415">(469) 325-4415</a></p>
+               <p><strong>📧 Email:</strong> <a href="mailto:afcjdnadistritodallas@gmail.com">afcjdnadistritodallas@gmail.com</a></p>
             </div>
          </div>
       </section>
