@@ -4,8 +4,8 @@
       <meta charset="utf-8"/>
       <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
       <title>Jueces de Israel</title>
-      <link rel="icon" type="image/x-icon" href="images/favicon.png">
-      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&amp;display=swap" rel="stylesheet"/>
+      <link href="images/favicon.png" rel="icon" type="image/x-icon"/>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&amp;display=swap" rel="stylesheet">
       <style>
          :root{
          --purple:#5a28a5;
@@ -186,10 +186,41 @@
          backdrop-filter:blur(4px);
          }
          .contact-card p{margin-bottom:16px;}
+         header{background:#fff;position:sticky;top:0;z-index:1000;box-shadow:0 2px 10px rgba(0,0,0,.08)}
+         .nav{display:flex;justify-content:space-between;align-items:center;padding:14px 0}
+         .logo{display:flex;align-items:center;gap:12px}
+         .logo img{height:52px}
+         .logo h2{font-size:1.1rem;margin:0;color:var(--dark)}
+         .logo p{font-size:.8rem;margin:0;color:#666}
+         nav{display:flex;gap:24px}
+         nav a{text-decoration:none;color:var(--dark);font-weight:600}
+         @media(max-width:700px){
+         .nav{flex-direction:column;gap:12px}
+         nav{flex-wrap:wrap;justify-content:center;gap:14px}
+         .logo p{display:none}
+         }
       </style>
+      </link>
    </head>
    <body>
-      <div class="hero">
+      <header>
+         <div class="container nav">
+            <div class="logo">
+               <a href="index.html">
+                  <img alt="DNA Distrito Dallas" src="images/logo-dna.png"/>
+               </a>
+               <div>
+                  <h2>DNA Distrito Dallas</h2>
+                  <p>Discipulando a la siguiente generación para Jesús</p>
+               </div>
+            </div>
+            <nav>
+               <a href="https://docs.google.com/forms/d/e/1FAIpQLSe8OTa-G187LiN_WoYlZchp-VCuSGoBEvTyFBpQoxUa51X4ag/viewform">Registrar Niño</a>
+               <a href="https://docs.google.com/forms/d/e/1FAIpQLSeX2M0QS5llgdg2FyLf7XPQKbKwevHinIwHjEzNY2PeXKKpGQ/viewform">Registrar Voluntario</a>
+            </nav>
+         </div>
+      </header>
+      <div class="hero" id="top">
          <img alt="Jueces de Israel" src="images/jueces-hero.png"/>
       </div>
       <div class="container">
@@ -243,10 +274,10 @@
             </div>
             <div class="buttons">
                <a class="btn students" href="https://docs.google.com/forms/d/e/1FAIpQLSe8OTa-G187LiN_WoYlZchp-VCuSGoBEvTyFBpQoxUa51X4ag/viewform" target="_blank">
-               Registrar Niños
+               Registrar Niño
                </a>
                <a class="btn volunteers" href="https://docs.google.com/forms/d/e/1FAIpQLSeX2M0QS5llgdg2FyLf7XPQKbKwevHinIwHjEzNY2PeXKKpGQ/viewform" target="_blank">
-               Registrar Voluntarios
+               Registrar Voluntario
                </a>
             </div>
          </div>
@@ -265,7 +296,7 @@
             </div>
          </div>
       </section>
-      <section class="contactanos-section">
+      <section class="contactanos-section" id="contacto">
          <div class="container">
             <div class="contact-card">
                <h2>Contáctanos</h2>

@@ -1,29 +1,47 @@
 <!DOCTYPE html>
 <html lang="es">
    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta charset="utf-8"/>
+      <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
       <title>DNA Distrito Dallas</title>
-      <link rel="icon" type="image/x-icon" href="images/favicon.png">
-      <link rel="stylesheet" href="css/index.css">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+      <link href="images/favicon.png" rel="icon" type="image/x-icon"/>
+      <link href="css/index.css" rel="stylesheet"/>
+      <style>
+         .event-card-link{text-decoration:none;color:inherit;display:block}
+         .event-card{overflow:hidden;cursor:pointer;transition:transform .25s ease,box-shadow .25s ease}
+         .event-card img{width:100%;height:220px;object-fit:contain;background:#fff;padding:16px}
+         .event-card:hover{transform:translateY(-8px) scale(1.02);box-shadow:0 16px 32px rgba(0,0,0,.2)}
+         .event-card:hover h3{color:#1d73d8}
+         /* Mobile navigation fix */
+         header{position:sticky;top:0;z-index:1000;background:#fff}
+         .nav{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap}
+         nav{display:flex;gap:1rem;flex-wrap:wrap}
+         @media (max-width:768px){
+         .nav{flex-direction:column;align-items:center}
+         .logo{display:flex;flex-direction:column;align-items:center;text-align:center}
+         nav{display:flex !important;justify-content:center;width:100%}
+         nav a{display:block;padding:.5rem}
+         }
+      </style>
+      <link href="https://fonts.googleapis.com" rel="preconnect"/>
+      <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
    </head>
    <body>
       <header>
          <div class="container nav">
             <div class="logo">
-               <img src="images/logo-dna.png" alt="DNA Distrito Dallas">
+               <a href="index.html">
+               <img alt="DNA Distrito Dallas" src="images/logo-dna.png"/>
+               </a>
                <div>
                   <h2>DNA Distrito Dallas</h2>
                   <p>Discipulando a la siguiente generación para Jesús</p>
                </div>
             </div>
             <nav>
-               <a href="#inicio">Inicio</a>
+               <a href="index.html">Inicio</a>
                <a href="#eventos">Eventos</a>
-               <a href="#ministerios">Ministerios</a>
                <a href="#contacto">Contacto</a>
             </nav>
          </div>
@@ -39,71 +57,30 @@
                   Nuestro propósito es ayudar a iglesias, familias y líderes a discipular niños
                   mediante eventos, conferencias, campamentos y actividades durante todo el año.
                </p>
-               <div class="buttons">
-                  <a href="#eventos" class="btn">Ver Eventos</a>
-                  <a href="#voluntarios" class="btn secondary">Ser Voluntario</a>
-               </div>
             </div>
             <div class="hero-image">
-               <img src="images/logo-dna.png" alt="DNA">
+               <img alt="DNA" src="images/logo-dna.png"/>
             </div>
          </div>
       </section>
       <section class="section" id="eventos">
          <div class="container">
             <h2 class="section-title">
-               Eventos del Año
+               Próximos Eventos
             </h2>
             <div class="cards">
-               <div class="card">
-                  <div class="emoji">🌸</div>
-                  <h3>Primavera</h3>
-                  <p>
-                     Congresos infantiles, talleres para maestros y actividades familiares.
-                  </p>
-               </div>
-               <div class="card">
-                  <div class="emoji">☀️</div>
-                  <h3>Escuela Bíblica de Verano</h3>
-                  <p>
-                     Diversión, música, juegos, historias bíblicas y mucho aprendizaje.
-                  </p>
-               </div>
-               <div class="card">
-                  <div class="emoji">🍂</div>
-                  <h3>Conferencia DNA</h3>
-                  <p>
-                     Capacitación para líderes, padres y maestros de niños.
-                  </p>
-               </div>
-               <!-- <div class="card">
-                  <div class="emoji">🎄</div>
-                  <h3>Navidad</h3>
-                  <p>
-                     Eventos especiales para compartir el nacimiento de Jesús con la comunidad.
-                  </p>
-               </div> -->
-            </div>
-         </div>
-      </section>
-      <section class="section light" id="ministerios">
-         <div class="container">
-            <h2 class="section-title">
-               Nuestros Ministerios
-            </h2>
-            <div class="grid-3">
-               <div>
-                  <h3>👧 Niños</h3>
-                  <p>
-                     Programas diseñados para enseñar la Palabra de Dios de manera divertida e interactiva.
-                  </p>
-               </div>
-               <div>
-                  <h3>📖 Capacitación</h3>
-                  <p>
-                     Entrenamiento para maestros, líderes y padres comprometidos con la siguiente generación.
-                  </p>
-               </div>
+               <!-- <a class="event-card-link" href="wonder-junction.html">
+                  <div class="card event-card">
+                     <img alt="Wonder Junction" src="images/main-logo.png"/>
+                     <h3>Wonder Junction</h3>
+                  </div>
+                  </a> -->
+               <a class="event-card-link" href="jueces-de-israel.html">
+                  <div class="card event-card">
+                     <img alt="Jueces de Israel" src="images/jueces-hero.png"/>
+                     <h3>Jueces de Israel</h3>
+                  </div>
+               </a>
             </div>
          </div>
       </section>
@@ -124,7 +101,7 @@
                <h4>Síguenos</h4>
                <p>Facebook</p>
                <p>Instagram</p>
-            </div> -->
+               </div> -->
          </div>
       </footer>
       <script src="js/index.js"></script>
